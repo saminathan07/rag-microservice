@@ -11,3 +11,4 @@ dist/
 coverage/
 vectors.json
 EOF
+.env
