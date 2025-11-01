@@ -1,0 +1,11 @@
+ag-microservice/
+├── docs/              # input documents: .txt, .md, .pdf, .docx
+├── scripts/
+│ └── index.js         # indexer: extract -> chunk -> embed -> save vectors.json
+├── server/
+│ ├── index.js         # Express API: POST /ask
+│ └── vectorStore.js   # (helper) load vectors.json, topK search
+├── vectors.json       # generated vector store (output of scripts/index.js)
+├── .env               # local secrets (NOT committed)
+├── README.md
+└── ARCHITECTURE.md
